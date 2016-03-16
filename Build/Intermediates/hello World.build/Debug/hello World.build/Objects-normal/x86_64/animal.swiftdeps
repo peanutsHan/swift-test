@@ -1,0 +1,79 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Animal"
+- "Dog"
+provides-nominal:
+- "P11hello_World6Animal"
+- "C11hello_World3Dog"
+provides-member:
+- ["P11hello_World6Animal", ""]
+- ["C11hello_World3Dog", ""]
+provides-dynamic-lookup:
+- "run"
+- "run"
+depends-top-level:
+- !private "StringLiteralType"
+- "NSObject"
+- !private "print"
+- "Animal"
+- "Dog"
+depends-member:
+- !private ["P11hello_World6Animal", "print"]
+- ["P11hello_World6Animal", "run"]
+- ["P11hello_World6Animal", ""]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "print"]
+- ["PSs9AnyObject", "run"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "print"]
+- ["PSs11CVarArgType", "run"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- ["PSs23CustomStringConvertible", "run"]
+- ["PSs23CustomStringConvertible", ""]
+- ["C11hello_World3Dog", "deinit"]
+- ["C11hello_World3Dog", "init"]
+- !private ["C11hello_World3Dog", "print"]
+- ["C11hello_World3Dog", "run"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "print"]
+- ["PSs9Equatable", "run"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "print"]
+- ["PSs8Hashable", "run"]
+- ["PSs8Hashable", ""]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "run"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "run"]
+- ["PSo16NSObjectProtocol", ""]
+depends-nominal:
+- "P11hello_World6Animal"
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "C11hello_World3Dog"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/hanweitao/Desktop/Other/hello World/hello World/hello World-Bridging-Header.h"
+- "/Users/hanweitao/Desktop/Other/hello World/hello World/HWTestView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "016a83a173b353ebad56f20941ed038a"

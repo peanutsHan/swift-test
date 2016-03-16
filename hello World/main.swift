@@ -8,5 +8,10 @@
 
 import Foundation
 
-println("Hello, World!")
+print("Hello, World!")
+
+var str = "fsdfjsdlfjsdfjlsdfjsdj"
+
+//swift调用OC
+var testView = HWTestView()
 

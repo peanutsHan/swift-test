@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A22717FD1BBAB4910054F2F6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22717FC1BBAB4910054F2F6 /* main.swift */; };
+		A22718041BBAB4B60054F2F6 /* test00.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22718031BBAB4B60054F2F6 /* test00.swift */; };
+		A24374881BC69C02008BC914 /* HWTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A24374871BC69C02008BC914 /* HWTestView.m */; };
+		A243748A1BC6A717008BC914 /* animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24374891BC6A717008BC914 /* animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		A22717F91BBAB4910054F2F6 /* hello World */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hello World"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22717FC1BBAB4910054F2F6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A22718031BBAB4B60054F2F6 /* test00.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test00.swift; sourceTree = "<group>"; };
+		A22718051BBAB8220054F2F6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		A24374851BC69C02008BC914 /* hello World-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hello World-Bridging-Header.h"; sourceTree = "<group>"; };
+		A24374861BC69C02008BC914 /* HWTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTestView.h; sourceTree = "<group>"; };
+		A24374871BC69C02008BC914 /* HWTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTestView.m; sourceTree = "<group>"; };
+		A24374891BC6A717008BC914 /* animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				A22717FC1BBAB4910054F2F6 /* main.swift */,
+				A22718031BBAB4B60054F2F6 /* test00.swift */,
+				A24374861BC69C02008BC914 /* HWTestView.h */,
+				A24374871BC69C02008BC914 /* HWTestView.m */,
+				A24374891BC6A717008BC914 /* animal.swift */,
+				A22718051BBAB8220054F2F6 /* MyPlayground.playground */,
+				A24374851BC69C02008BC914 /* hello World-Bridging-Header.h */,
 			);
 			path = "hello World";
 			sourceTree = "<group>";
@@ -88,7 +103,8 @@
 		A22717F11BBAB4910054F2F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = mob;
 				TargetAttributes = {
 					A22717F81BBAB4910054F2F6 = {
@@ -118,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A24374881BC69C02008BC914 /* HWTestView.m in Sources */,
+				A243748A1BC6A717008BC914 /* animal.swift in Sources */,
 				A22717FD1BBAB4910054F2F6 /* main.swift in Sources */,
+				A22718041BBAB4B60054F2F6 /* test00.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +164,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -206,14 +226,21 @@
 		A22718011BBAB4910054F2F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hello World/hello World-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A22718021BBAB4910054F2F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hello World/hello World-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -236,6 +263,7 @@
 				A22718021BBAB4910054F2F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

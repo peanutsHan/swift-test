@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "2963204047291acda28bbf76524f34e9"
+build_time: [510144329, 907893000]
+inputs:
+  "/Users/hanweitao/Desktop/Other/hello World/hello World/main.swift": [510144324, 0]
+  "/Users/hanweitao/Desktop/Other/hello World/hello World/test00.swift": [496843190, 0]
+  "/Users/hanweitao/Desktop/Other/hello World/hello World/animal.swift": [510144317, 0]
