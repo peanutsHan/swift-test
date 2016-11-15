@@ -29,7 +29,7 @@ var doubleValue = 2+sample
 doubleValue.isFinite
 doubleValue.isNormal
 doubleValue.isZero
-doubleValue.isSignaling
+doubleValue.isSignalingNaN
 doubleValue.description
 
 /**
@@ -48,7 +48,7 @@ var surplusDate = 3
 while surplusDate >= 0
 {
     print(surplusDate.description)
-    surplusDate--
+    surplusDate -= 1
 }
 
 /**
